@@ -1,7 +1,10 @@
-// Array di oggetti con i PDF caricati
+// app.js
+
+// Array di oggetti con i PDF e le immagini
 const pdfs = [
-    { name: "Concerto XYZ", url: "biglietto1.pdf" },
-    { name: "Teatro ABC", url: "biglietto2.pdf" }
+    { name: "Il posto delle fragole", url: "Posto delle fragole.pdf", image: "fragole.jpeg" },
+    { name: "Eyes Wide Shut", url: "biglietto2.pdf", image: "eyes.jpg" },
+    { name: "Picnic a Hanging Rock", url: "biglietto3.pdf", image: "picnic.jpg" }
 ];
 
 // Seleziona il div per la lista
@@ -9,11 +12,22 @@ const pdfList = document.getElementById("pdf-list");
 
 // Genera i link ai PDF
 pdfs.forEach(pdf => {
+    const container = document.createElement("div");
+    container.style.marginBottom = "20px";
+
     const link = document.createElement("a");
     link.href = pdf.url;
     link.textContent = pdf.name;
     link.target = "_blank"; // Apre il link in una nuova scheda
-    pdfList.appendChild(link);
-    pdfList.appendChild(document.createElement("br"));
-});
 
+    const image = document.createElement("img");
+    image.src = pdf.image;
+    image.alt = pdf.name;
+    image.style.width = "100px";
+    image.style.borderRadius = "10px";
+    image.style.marginTop = "10px";
+
+    container.appendChild(link);
+    container.appendChild(image);
+    pdfList.appendChild(container);
+});
