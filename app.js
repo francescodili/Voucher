@@ -1,10 +1,15 @@
 // app.js
 
+// Cambia lo sfondo dopo 2 secondi
+setTimeout(() => {
+    document.body.classList.add('noidue');
+}, 2000);
+
 // Array di oggetti con i PDF e le immagini
 const pdfs = [
     { name: "Il posto delle fragole", url: "Posto delle fragole.pdf", image: "fragole.jpeg" },
-    { name: "Eyes Wide Shut", url: "biglietto2.pdf", image: "eyes.jpg" },
-    { name: "Picnic a Hanging Rock", url: "biglietto3.pdf", image: "picnic.jpg" }
+    { name: "Eyes Wide Shut", url: "default.pdf", image: "eyes.jpg" },
+    { name: "Picnic a Hanging Rock", url: "default.pdf", image: "picnic.jpg" }
 ];
 
 // Seleziona il div per la lista

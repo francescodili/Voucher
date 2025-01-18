@@ -3,9 +3,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('Sfondo.png') no-repeat center center fixed;
+    background: url('Sfondo.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
+    transition: background 2s ease-in-out; /* Transizione per lo sfondo */
+}
+
+body.noidue {
+    background: url('noidue.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
