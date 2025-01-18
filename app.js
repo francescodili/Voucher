@@ -1,10 +1,5 @@
 // app.js
 
-// Cambia lo sfondo dopo 2 secondi
-setTimeout(() => {
-    document.body.classList.add('noidue');
-}, 2000);
-
 // Array di oggetti con i PDF e le immagini
 const pdfs = [
     { name: "Il posto delle fragole", url: "Posto delle fragole.pdf", image: "fragole.jpeg" },
