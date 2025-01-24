@@ -3,7 +3,7 @@
 // Array di oggetti con i PDF e le immagini
 const pdfs = [
     { name: "Il posto delle fragole", url: "Posto delle fragole.pdf", image: "fragole.jpeg" },
-    { name: "Eyes Wide Shut", url: "default.pdf", image: "eyes.jpg" },
+    { name: "Eyes Wide Shut", url: "eyes.pdf", image: "eyes.jpg" },
     { name: "Picnic a Hanging Rock", url: "default.pdf", image: "picnic.jpg" }
 ];
 
